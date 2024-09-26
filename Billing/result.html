@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav class="navs">
+        <div class="logo">
+           <a href=""><h1>QuizApp</h1></a>
+        </div>
+        <div class="nav_link">
+            <a href="quiz.html">Home</a>
+            <a href="result.html">services</a>
+            <a href="">about</a>
+            <a href="">contact</a>
+            <a href=""><button>sign up</button></a>
+        </div> 
+    </nav>
+    <h1>Quiz Result</h1>
+    <p id="score"></p>
+    <footer>
+        <div class="footer" style="text-align: center; margin-top: 4rem;" >
+            <span>&copy; 2024 All Right Reserved</span>
+          </div>
+    </footer>
+    <script>
+        const totalScore = localStorage.getItem("totalScore");
+        const questionsLength = localStorage.getItem("questionsLength");
+
+        document.getElementById("score").innerHTML = `You scored ${totalScore} out of ${questionsLength}!`;
+    </script>
+</body>
+</html>
