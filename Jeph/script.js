@@ -47,6 +47,6 @@ document.getElementById('signInForm').addEventListener('submit', function(event)
         emailInput.value = '';
 
         // Redirect to another page
-        window.location.href = 'quiz.html'; // Change this to your landing page URL
+        window.location.href = 'index.html'; // Change this to your landing page URL
     }
 });
