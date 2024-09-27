@@ -1,16 +1,16 @@
 document.getElementById('signInForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const nameError = document.getElementById('nameError');
-    const emailError = document.getElementById('emailError');
+    let nameInput = document.getElementById('name');
+    let emailInput = document.getElementById('email');
+    let nameError = document.getElementById('nameError');
+    let emailError = document.getElementById('emailError');
 
-    const nameValue = nameInput.value.trim();
-    const emailValue = emailInput.value.trim();
+    let nameValue = nameInput.value.trim();
+    let emailValue = emailInput.value.trim();
 
-    const nameRegex = /^[a-zA-Z\s]+$/;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let nameRegex = /^[a-zA-Z\s]+$/;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     let isValid = true;
 
