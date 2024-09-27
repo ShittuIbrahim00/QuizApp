@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navs">
-        <div class="logo">
-           <a href=""><h1>QuizApp</h1></a>
-        </div>
-        <div class="nav_link">
-            <a href="quiz.html">Home</a>
-            <a href="result.html">services</a>
-            <a href="">about</a>
-            <a href="">contact</a>
-            <a href=""><button>sign up</button></a>
-        </div> 
-    </nav>
+    <div class="container">
+        <h2>Sign In To Play</h1>
+        <form id="signInForm">
+            <input type="text" id="name" placeholder="Enter your name">
+            <div class="error" id="nameError">Please enter a valid name (only letters and spaces).</div>
+            <input type="email" id="email" placeholder="Enter your email">
+            <div class="error" id="emailError">Please enter a valid email address.</div>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
     <footer>
         <div class="footer" style="text-align: center; margin-top: 4rem;" >
             <span>&copy; 2024 All Right Reserved</span>
           </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
