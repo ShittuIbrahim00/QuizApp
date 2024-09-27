@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="result.html">
+    <link rel="stylesheet" href="">
     <title>Quiz App</title>
 </head>
 <body>
@@ -34,6 +35,9 @@
     </div> 
 </nav>
     <h1>Quiz Game</h1>
+    <div>
+      <span id="users"></span>
+    </div>
     <!-- <p class="result">Total Points: 0</p> -->
     <div style="width: 60%; margin: auto;">
         <!-- <p class="question"></p> -->
@@ -49,6 +53,13 @@
   </footer>
 
 
+
+    <script>
+      let users = localStorage.getItem("quizUsers");
+    // const questionsLength = localStorage.getItem("questionsLength");
+
+      document.getElementById("userName").innerHTML = `You scored ${quizUsers}!`;
+    </script>
     <script src="quiz.js"></script>
 </body>
 </html>
